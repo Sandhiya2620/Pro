@@ -1,5 +1,7 @@
 import React, { useState }from "react";
 import { NavLink } from "react-router-dom";
+import SignIn from "./pages/SignIn";
+import SignUp from "./pages/SignUp";
 
 
 import  "./Navbar.css"
@@ -17,13 +19,13 @@ export const Navbar = () => {
             <span></span>
        <ul className={menuOpen ?  "open" : ""}>
                 <li>
-                    <NavLink to="/about">Home</NavLink>
+                    <NavLink to="/home">Home</NavLink>
                 </li>
                 <li>
-                    <NavLink to="/services">SignIn</NavLink>
+                    <NavLink to="/signin">SignIn</NavLink>
                 </li>
                 <li> 
-                    <NavLink to="/contact">SignUp</NavLink>
+                    <NavLink to="/signup">SignUp</NavLink>
                 </li>
             </ul>
         </nav>
